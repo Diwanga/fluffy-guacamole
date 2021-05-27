@@ -8,6 +8,8 @@ import MeetingAddModal from "../../layout/MeetingAddModal";
 import AlertContext from "../../../context/alert/alertContext";
 import { ConfirmationNumber } from "@material-ui/icons";
 
+const url = "https://apisma.herokuapp.com"
+
 const AddMeeting = () => {
   const authContext = useContext(AuthContext);
   const { user } = authContext;
@@ -37,13 +39,13 @@ const AddMeeting = () => {
     console.log(`xzczxczxczxczxcxz`);
     //  console.log(`GETMEETINGS ${searchDate}`);
     axios
-      .post("/main/free/rooms/custom", {
+      .post(`${url}/main/free/rooms/custom`, {
         date,
         startTime,
         endTime,
       }) //date yawanna
       .then(function (response) {
-        console.log("CHALI");
+      
         console.log(response);
         setLecRooms(response.data);
 
@@ -74,7 +76,7 @@ const AddMeeting = () => {
     console.log(data);
 
     axios
-      .post("/main/add", data)
+      .post(`${url}/main/add`, data)
       .then(function (response) {
         console.log(response);
         //  setRoomInsert({ name: "", category: "" });

@@ -17,6 +17,8 @@ export default function DeleteMeetingModal(props) {
   console.log("i am in modal");
   ///console.log(nextcompId);
 
+  const url = "https://apisma.herokuapp.com"
+  
   const [device, setDevice] = useState({
     compId: "",
     category: "",
@@ -48,7 +50,7 @@ export default function DeleteMeetingModal(props) {
   const handleClose = () => {
     setOpen(false);
     axios
-      .post("/main/add/", device)
+      .post(`${url}/main/add/`, device)
       .then(function (response) {
         console.log(response);
         //  setRoomInsert({ name: "", category: "" });

@@ -52,7 +52,7 @@ export default function MeetingAddModal(props) {
     console.log(meetingData);
     setOpen(false);
     axios
-      .post("/main/add/schedule/", meetingData)
+      .post(`${url}/main/add/schedule/`, meetingData)
       .then(function (response) {
         console.log(response);
         //  setRoomInsert({ name: "", category: "" });

@@ -9,6 +9,8 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import axios from "axios";
 import AlertContext from "../../context/alert/alertContext";
 
+const url = "https://apisma.herokuapp.com"
+
 export default function AddDeviceModal(props) {
   const alertContext = useContext(AlertContext);
   const [open, setOpen] = React.useState(false);
@@ -50,7 +52,7 @@ export default function AddDeviceModal(props) {
     setOpen(false);
     console.log(device);
     axios
-      .post("/main/update/room/", device)
+      .post(`${url}/main/update/room/`, device)
       .then(function (response) {
         console.log(response);
         //  setRoomInsert({ name: "", category: "" });

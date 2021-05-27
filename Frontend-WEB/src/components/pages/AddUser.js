@@ -3,7 +3,7 @@ import React, { useState, useContext, useEffect } from "react";
 import AlertContext from "../../context/alert/alertContext";
 // import UserContext from "../../context/alert/alertContext";
 import UserContext from "../../context/user/userContext";
-
+const url = "https://apisma.herokuapp.com"
 function AddRoom() {
   const alertContext = useContext(AlertContext);
   const userContext = useContext(UserContext);

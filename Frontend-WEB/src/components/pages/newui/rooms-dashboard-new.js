@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+const url = "https://apisma.herokuapp.com"
 // const renderTableData = () => {
 //   return rooms.map((meetingRoom, index) => {
 //     const { _id, roomName, lastConfigDate } = meetingRoom;
@@ -37,7 +37,7 @@ function RoomsDashBoardNew() {
 
   const getallrooms = () => {
     // axios.get("/main/roomall/").then((responce) => {
-    axios.get("/main/table/").then((responce) => {
+    axios.get(`${url}/main/table/`).then((responce) => {
       const roomss = responce.data;
       console.log("room array");
       console.log(roomss);

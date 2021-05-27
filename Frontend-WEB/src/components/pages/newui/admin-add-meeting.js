@@ -14,7 +14,7 @@ import { lecRoomData } from "../data";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import AlertContext from "../../../context/alert/alertContext";
-
+const url = "https://apisma.herokuapp.com"
 //import AuthContext from "../../../context/auth/authContext";
 
 const AdminAddMeeting = () => {
@@ -59,7 +59,7 @@ const AdminAddMeeting = () => {
   const getMeetings = () => {
     console.log(`GETMEETINGS ${searchDate}`);
     axios
-      .post("/main/get/schedule/date", {
+      .post(`${url}/main/get/schedule/date`, {
         date: searchDate,
         roomName: params.roomName,
       })
@@ -144,7 +144,7 @@ const AdminAddMeeting = () => {
     console.log(`xzczxczxczxczxcxz`);
     //  console.log(`GETMEETINGS ${searchDate}`);
     axios
-      .post("/main/add/schedule/", {
+      .post(`${url}/main/add/schedule/`, {
         userId,
         date: searchDate,
         startTime,

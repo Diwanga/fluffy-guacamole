@@ -40,8 +40,11 @@ export function Configure() {
   //     );
   //   });
   // };
+
+  const url = "https://apisma.herokuapp.com"
+
   const getallrooms = () => {
-    axios.get("/api/room").then((responce) => {
+    axios.get(`${url}/api/room`).then((responce) => {
       const rooms = responce.data;
       console.log(rooms);
       getRooms(rooms);

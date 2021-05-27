@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import AddDeviceModal from "../../layout/AddDeviceModal";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
-
+const url = "https://apisma.herokuapp.com"
 const RoomsConfig = () => {
   const params = useParams();
   const [loadingData, setLoadingData] = useState(true);
@@ -23,7 +23,7 @@ const RoomsConfig = () => {
   //   password: "",
   // });
   const getDevices = async () => {
-    const res = await axios.post("/main/get/roomCompData/", {
+    const res = await axios.post(`${url}/main/get/roomCompData/`, {
       roomName: params.roomName,
     });
     console.log(res.data);

@@ -11,12 +11,12 @@ function UserMyMeetings() {
   console.log(user.userId);
   const [meetings, setMeetings] = useState([]);
   const [callback, setcallback] = useState(false);
-
+const url = "https://apisma.herokuapp.com"
   const getallmeetings = (userr) => {
     console.log(userr.userId);
     // axios.get("/main/roomall/").then((responce) => {
     axios
-      .post("/main/get/schedule/user/all/", { userId: userr.userId })
+      .post(`${url}/main/get/schedule/user/all/`, { userId: userr.userId })
       .then((responce) => {
         const myMeetings = responce.data;
 
@@ -91,7 +91,7 @@ function UserMyMeetings() {
     console.log(id.id);
 
     axios
-      .delete(`/main/delete/schedule/${id.id}`)
+      .delete(`${url}/main/delete/schedule/${id.id}`)
       .then(function (response) {
         console.log("diwanga");
         console.log(response.message);

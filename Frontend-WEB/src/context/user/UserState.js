@@ -22,6 +22,9 @@ const UserState = (props) => {
   const initialState = {
     error: null,
   };
+
+  const url = "https://apisma.herokuapp.com"
+
   const [state, dispatch] = useReducer(userReducer, initialState);
 
   // //Load User
@@ -54,7 +57,7 @@ const UserState = (props) => {
 
     try {
       console.log(formData);
-      const res = await axios.post("/api/newuser/", formData, config);
+      const res = await axios.post(`${url}/api/newuser/`, formData, config);
       dispatch({
         type: USER_ADD_SUCCESS,
         payload: res.data.msg,

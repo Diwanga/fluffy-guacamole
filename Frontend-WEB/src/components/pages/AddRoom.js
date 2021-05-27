@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 // import AlertContext from "../../context/alert/alertContext";
-
+const url = "https://apisma.herokuapp.com"
 function AddRoom() {
   //   const alertContext = useContext(AlertContext);
   const [roomInsert, setRoomInsert] = useState({
@@ -30,7 +30,7 @@ function AddRoom() {
 
     axios
       // .post("/api/room/", roomInsert)
-      .post("/main/add/room/", roomInsert)
+      .post(`${url}/main/add/room/`, roomInsert)
       .then(function (response) {
         console.log(response);
         setRoomInsert({ roomName: "", category: "", controlUnitId: "" });
