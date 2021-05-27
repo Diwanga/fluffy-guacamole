@@ -10,7 +10,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
 import axios from "axios";
 import AlertContext from "../../context/alert/alertContext";
-
+const url = "https://apisma.herokuapp.com"
 export default function MeetingAddModal(props) {
   const alertContext = useContext(AlertContext);
   const [open, setOpen] = React.useState(false);
