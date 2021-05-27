@@ -6,7 +6,7 @@ import { getDefaultNormalizer } from "@testing-library/react";
 
 import axios from "axios";
 import AlertContext from "../../context/alert/alertContext";
-
+const url = "https://apisma.herokuapp.com"
 const data = [
   {
     roomid: 1,
