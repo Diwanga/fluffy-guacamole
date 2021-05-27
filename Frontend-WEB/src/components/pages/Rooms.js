@@ -41,7 +41,7 @@ function Rooms() {
 
   const getdata = () => {
     axios
-      .post(`${url}main/rooms/status`)
+      .post(`${url}/main/rooms/status`)
       .then(function (response) {
         console.log(response.data);
         const myMeetings = response.data;
