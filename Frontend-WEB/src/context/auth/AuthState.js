@@ -24,7 +24,8 @@ const AuthState = (props) => {
     user: null,
     isadmin: false,
   };
- const url = "https://deptestzero.herokuapp.com"
+//  const url = "https://deptestzero.herokuapp.com"
+ const url = "https://apisma.herokuapp.com"
 
 
   const [state, dispatch] = useReducer(authReducer, initialState);
