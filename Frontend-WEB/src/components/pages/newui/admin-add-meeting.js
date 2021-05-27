@@ -136,7 +136,7 @@ const AdminAddMeeting = () => {
     // const roomId = params._id;
    // const startTimet = '12:30:00';
 const durationInMinutes = '330';
-
+console.log("diwanga ",startTime,endTime)
 const endTimet = moment(endTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
 const startTimet = moment(startTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
 
