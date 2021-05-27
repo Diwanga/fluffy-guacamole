@@ -24,6 +24,9 @@ const AuthState = (props) => {
     user: null,
     isadmin: false,
   };
+ const url = "https://deptestzero.herokuapp.com"
+
+
   const [state, dispatch] = useReducer(authReducer, initialState);
 
   useEffect(() => {
@@ -39,7 +42,7 @@ const AuthState = (props) => {
     }
     //else
     try {
-      const res = await axios.get("/api/auth");
+      const res = await axios.get(`${url}/api/auth`);
       console.log(res);
       dispatch({
         type: USER_LOADED,
@@ -60,7 +63,7 @@ const AuthState = (props) => {
 
     try {
       console.log(formData);
-      const res = await axios.post("/api/newuser/register", formData, config);
+      const res = await axios.post(`${url}/api/newuser/register`, formData, config);
       dispatch({
         type: REGISTER_SUCCESS,
         payload: res.data.msg,
@@ -86,7 +89,7 @@ const AuthState = (props) => {
 
     try {
       console.log(formData);
-      const res = await axios.post("/api/auth", formData, config);
+      const res = await axios.post(`${url}/api/auth`, formData, config);
       console.log(formData);
 
       dispatch({

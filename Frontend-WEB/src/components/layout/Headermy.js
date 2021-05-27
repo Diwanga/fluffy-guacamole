@@ -37,17 +37,24 @@ const Headermy = ({ title, icon }) => {
 
   const onLogout = () => {
     closeIfOpen();
-    window.location.href = "/login";
+  //  window.location.href = "/login";
     logout();
   };
 
   const authLinks = (
     <>
       {/* <li>Hello {user && user.name}</li> */}
-      <li className="logoutshift">
+      {/* <li className="logoutshift">
         <a onClick={onLogout} href="#!">
           <i className="fas fa-sign-out-alt"></i> <span>Logout</span>
         </a>
+      </li> */}
+
+         <li>
+        <Link onClick={onLogout} to="/login">
+         <i className="fas fa-sign-out-alt"></i> <span>Logout</span>
+        </Link>
+
       </li>
     </>
   );
