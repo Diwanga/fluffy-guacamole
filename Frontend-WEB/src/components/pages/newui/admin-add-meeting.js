@@ -137,8 +137,8 @@ const AdminAddMeeting = () => {
    // const startTimet = '12:30:00';
 const durationInMinutes = '330';
 console.log("diwanga ",startTime,endTime)
-const endTimet = moment(endTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
-const startTimet = moment(startTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
+const endTimet = moment(endTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
+const startTimet = moment(startTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
 
     console.log(`end time T T ${endTimet}`)
     console.log(`start time T T ${startTimet}`)
