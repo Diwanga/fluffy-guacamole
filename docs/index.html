@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Smart Meeting Automaton</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="mobirise-gallery/style.css">
+
+        <style>
+            #table-summary {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #table-summary td, #table-summary th {
+                border: 1px solid #ddd;
+                padding: 8px;
+                }
+
+            #table-summary tr:nth-child(even){background-color: #f2f2f2;}
+
+            #table-summary tr:hover {background-color: #ddd;}
+
+            #table-summary th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Unified Project</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#solution">Solution</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#design">Design/Progress</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#budget">Budget</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <!--<h1 class="mx-auto my-10 text-uppercase">Smart </h1> 
+                    <h1 class="mx-auto my-0 text-uppercase"></h1>
+                    <h1 class="mx-auto my-0 text-uppercase">Meeting</h1>-->                   
+                    <h1 class="text-white-0 mx-auto mt-2 mb-4">SMART</h1> 
+                    <h1 class="text-white-0 mx-auto mt-2 mb-4">MEETING</h1>
+                    <h1 class="text-white-0 mx-auto mt-2 mb-4">AUTOMATON</h1>
+                    <!--<h1 class="mx-auto my-5 text-uppercase">Automaton</h1>-->
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Find More</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <!-- Solution for a Problem -->
+        <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Solution for a Problem</h2>
+                        <p class="text-white-50">
+                            We have seen some meeting rooms with working AC machines and projectors unnecessarily without anyone in the room, causing a wastage of current. In some cases, it is quite different that the AC machines are not working even almost all the room is filled.
+                            Other than that, presence of a worker to the meeting venue at the time of meeting, is essential to control different devices of AC machines and projectors. This control process is sometimes complex as it has to be used various remote controllers to control different devices.
+                            Our solution "SMART MEETING AUTOMATON" resolves almost all the things addressed here.
+                        </p>
+                    </div>
+                </div>
+                <!--<img class="img-fluid" src="assets/img/ipad.jpg" alt="" />-->
+            </div>
+        </section>
+        
+        <!-- System Overview -->
+        <section class="projects-section bg-light" id="overview">
+            <h1 class="text-black mb-4 text-center">System Overview</h1>
+            
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/system_overview.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <p class="text-black-100 mb-0">SMART MEETING AUTOMATON consists of two major streams.
+                                <li>Client Application</li>
+                                <li>Control Unit</li>
+                                These two streams are connected via AWS cloud.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Architecture -->
+        <section class="projects-section bg-light" id="solution">
+            <h1 class="text-black mb-4 text-center">Solution Architecture</h1>
+            
+            <div class="container">
+                <!-- Project One Row : Main Control Unit -->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/Main_Control_Unit.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Role of Main Control Unit</h4>
+                                    <p class="mb-0 text-white-100">
+                                        <ul>
+                                            <li class="mb-0 text-white-50">Local server on Raspberry Pi is updated automatically for every 10 minutes according to data on remote AWS server.</li>
+                                            <li class="mb-0 text-white-50">In case of Wi-Fi is disconnected, the Raspberry Pi storage can manage the operations.</li>
+                                            <li class="mb-0 text-white-50">Based on direction data of AC machines, projectors, server motors rotates.</li>
+                                        </ul>
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row : Extending Unit -->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/Sub_Control_Units.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Role of Extending Unit</h4>
+                                    <p class="mb-0 text-white-50">
+                                        <ul>
+                                            <li class="mb-0 text-white-50">Receive signals from Main Control Unit as Wi-Fi signals.</li>
+                                            <li class="mb-0 text-white-50">Give signals to AC machines, projectors as IR signals.</li>
+                                        </ul>
+                                    </p>
+                                    
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+
+        <!-- Design -->
+        <section class="projects-section bg-light" id="design">
+
+            <!-- Circuit Diagrams -->
+            <div class="container">
+                <h1 class="text-black mb-4 text-center">Circuit Diagrams</h1>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/main_unit_circuit.jpg" alt="" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/sub_units_circuit.jpg" alt="" /></div>
+                </div>
+            </div>
+            
+            <!-- UI Wireframe Designs -->
+            <div id="UIimage">
+                <div class="container-fluid p-0">
+                    <h1 class="text-center mt-5">UI Wireframe Designs</h1>
+                    <hr class="divider my-4" />
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-1.jpg">
+                                <img class="img-fluid" src="assets/img/UI-1.jpg" alt="" />
+                                
+                                <div class="UIimage-box-caption">
+                                    
+                                   <div class="project-name"></div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-2.jpg">
+                                <img class="img-fluid" src="assets/img/UI-2.jpg" alt="" />
+                                     
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                             
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-3.jpg">
+                                <img class="img-fluid" src="assets/img/UI-3.jpg" alt="" />
+                                 
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                           
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-3.jpg">
+                                <img class="img-fluid" src="assets/img/UI-3.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-5.jpg">
+                                <img class="img-fluid" src="assets/img/UI-5.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UI-4.jpg">
+                                <img class="img-fluid" src="assets/img/UI-4.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Entity Relationship Diagram -->
+            <div class="container">
+                <h1 class="text-black mb-4 text-center">Entity Relationship Diagram</h1>
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/ER_Diagram.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <p class="text-black-200 mb-0">
+
+                                <li>System has administrator persons</li>
+                                <li>Administrators create accounts for users(Lecturers/meeting owners)</li>
+                                <li>Administrators reserves lecture rooms/meeting rooms</li>
+                                <li>Admins figure out how to control devices in meeting room/lecture room</li>
+                                <li>Devices within meeting rooms automatically operates according to schedules</li>
+                                <li>Users can also control devices within the meeting room.(Via mobile app)</li>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- New added 2/2/2021 -->
+        
+            <!-- Front-end Software -->
+            <div id="UIimage">
+                <div class="container-fluid p-0">
+                    <h1 class="text-center mt-5">Front-end Software</h1>
+                    <h3 class="text-center mt-5">Design Architecture</h3>
+                
+                    <!-- Design Architecture -->
+                    <div class="container">
+                        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                            
+                            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/Front_Design_Architecture.jpg" alt="" /></div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="featured-text text-center text-lg-left">
+                                    <p class="text-black-100 mb-0">
+                                
+                                        <h4>React</h4>
+                                        <li>Dynamic content</li>
+                                        <li>React Hooks</li>
+                                        <hr class="divider my-4" />
+                                
+                                        <h4>AXIOS</h4>
+                                        <li>Communication with the backend</li>
+                                        <hr class="divider my-4" />
+                                        
+                                        <h4>Context API</h4>
+                                        <li>State management</li>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Front-end User Interfaces -->
+                    <hr class="divider my-4" />
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/1.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/1.jpg" alt="" />
+                                
+                                <div class="UIimage-box-caption">
+                                    
+                                   <div class="project-name"></div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/2.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/2.jpg" alt="" />
+                                     
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                             
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/3.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/3.jpg" alt="" />
+                                 
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                           
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/4.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/4.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/5.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/5.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/6.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/6.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/7.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/7.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/8.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/8.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/9.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/9.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/10.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/10.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/UIs/11.jpg">
+                                <img class="img-fluid" src="assets/img/UIs/11.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Software -->
+            <div class="container-fluid p-0">
+                <h1 class="text-center mt-5">Back-end Software</h1>
+            
+                <!-- Backend Design Architecture -->
+                <div class="container">
+                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                        
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-100 mb-0">
+                            
+                                    <h4>Node.js Express</h4>
+                                    <hr class="divider my-4" />
+                                    <li>Can build scalable, fast and non-blocking I-O backend server</li>
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-100 mb-0">
+                            
+                                    <h4>MongoDB Atlas</h4>
+                                    <hr class="divider my-4" />
+                                    <li>Automatically scale increase cluster storage with the growth of data</li>
+                                    <li>Storage can be maximized with auto-scaling features</li>
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-100 mb-0">
+                            
+                                    <h4>Security</h4>
+                                    <hr class="divider my-4" />
+                                    <li>Password hashing</li>
+                                    <li>Json Web Tokens(JWT) for user authorization</li>
+                                    <li>Authenticated local strategy using email and password</li>
+                                    <li>Authorization using JWT strategy to protect end points</li>
+                                    <li>Access tokens and refresh tokens for user identification</li>
+                                    <li>Data validation before sending them to database</li>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Software Testing -->
+            <div id="UIimage">
+                <div class="container-fluid p-0">
+                    <h1 class="text-center mt-5">Software Testing</h1>
+                    <hr class="divider my-4" />
+
+                    <!-- Software Testing Summary -->
+                    <h2 class="text-center mt-5">Summary Report</h2>
+                    <div>
+                        <table id="table-summary" style="width: 100%">
+                            <colgroup>
+                                <col span="1" style="width: 5%;">
+                                <col span="1" style="width: 15%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                            </colgroup>
+                            <tr>
+                                <th>Area of testing</th>
+                                <th>What was tested</th>
+                                <th>How was the test done ?</th>
+                                <th>Purpose</th>
+                                <th>Expected Results</th>
+                                <th>Findings</th>
+                            </tr>
+                            <tr>
+                                <td>Server</td>
+                                <td>Login to the system</td>
+                                <td>User needs to give correct username and password</td>
+                                <td>Admin and user have separate authorization methods. So some route need to admin login it will check by The API (User or Admin that are logged in)</td>
+                                <td>
+                                    <ul>
+                                        <li>Token is given, if user logged successfully</li>
+                                        <li>Otherwise, anyone can not access the services of the system</li>
+                                    </ul>
+                                </td>
+                                <td>Token is valid for 30 minutes. If a person knows this token within that time, he can access the system. (except for critical operations)</td>
+                            </tr>
+                            <tr>
+                                <td>Server</td>
+                                <td>Adding user to system and verify</td>
+                                <td>
+                                    <ul>
+                                        <li>User need to register for the system</li>
+                                        <li>Need freshly logging of admin</li>
+                                        <li>User needs the verification link that comes to email</li>
+                                        <li>After successfully adding, user needs to login again</li>
+                                    </ul>
+                                </td>
+                                <td>User can be added to the system with an email verifification and only admin can add user</td>
+                                <td>
+                                    <ul>
+                                        <li>On success : When admin adds a user to the system, verification email is sent</li>
+                                        <li>New user can only login the system via that verification link</li>
+                                    </ul>
+                                </td>
+                                
+                                <td>
+                                    <ul>
+                                        <li>User is uniquely identified by the email</li>
+                                        <li>User is validated whether he has provided an correct email</li>
+                                    </ul>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Server</td>
+                                <td>
+                                    <ul>
+                                        <li>Adding room</li>
+                                        <li>Delete room</li>
+                                        <li>Delete user</li>
+                                    </ul>
+                                </td>
+                                <td>Need admin fresh login (It expires within 5 mins)</td>
+                                <td>These operations are allowed only for admin to avoid misbehaviours of the system</td>
+                                <td>
+                                    <ul>
+                                        <li>On success : Status code - 200</li>
+                                        <li>Failed operations : Status code - 401</li>
+                                    </ul>
+                                </td>
+                                <td>Admin should verify his login with his password each time when he does these operations</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                    <!-- Unit tests to verify outputs over inputs -->
+                    <h2 class="text-center mt-5">Unit tests to verify outputs over inputs</h2>
+                    <hr class="divider my-4" />
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/addingUserToSystemWithInvalidToken.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/addingUserToSystemWithInvalidToken.jpg" alt="" />
+                                
+                                <div class="UIimage-box-caption">
+                                    
+                                   <div class="project-name"></div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/adminFreshLogin.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/adminFreshLogin.jpg" alt="" />
+                                     
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                             
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/adminLoginPasswordInvalid.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/adminLoginPasswordInvalid.jpg" alt="" />
+                                 
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                           
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/getRegisteredUserWithInvalidToken.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/getRegisteredUserWithInvalidToken.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/successfullAdminLogin.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/successfullAdminLogin.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/successfullGettingRegisteredUser.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/successfullGettingRegisteredUser.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/successUserLogin.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/successUserLogin.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/successUserRegister.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/successUserRegister.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/userEmailWrongLoginFaild.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/userEmailWrongLoginFaild.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/verifing_results/userRegisterRequestEmailAlreadyExist.jpg">
+                                <img class="img-fluid" src="assets/img/verifing_results/userRegisterRequestEmailAlreadyExist.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <!-- How testing was done -->
+                    <hr class="divider my-4" />
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST1.jpg">
+                                <img class="img-fluid" src="assets/img/ST1.jpg" alt="" />
+                                
+                                <div class="UIimage-box-caption">
+                                    
+                                   <div class="project-name"></div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST2.jpg">
+                                <img class="img-fluid" src="assets/img/ST2.jpg" alt="" />
+                                     
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                             
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST3.jpg">
+                                <img class="img-fluid" src="assets/img/ST3.jpg" alt="" />
+                                 
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                           
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST4.jpg">
+                                <img class="img-fluid" src="assets/img/ST4.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                   
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST5.jpg">
+                                <img class="img-fluid" src="assets/img/ST5.jpg" alt="" />
+                                <div class="UIimage-box-caption">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="UIimage-box" href="assets/img/ST6.jpg">
+                                <img class="img-fluid" src="assets/img/ST6.jpg" alt="" />
+                                <div class="UIimage-box-caption p-3">
+                                    
+                                    <div class="project-name"></div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Embedded Systems Testing -->
+            <div class="container-fluid p-0">
+                <h1 class="text-center mt-5">Embedded Systems Testing</h1>
+                <hr class="divider my-4" />
+
+                <div>
+                    <table id="table-summary" style="width: 100%">
+                        <colgroup>
+                            <col span="1" style="width: 30%;">
+                            <col span="1" style="width: 35%;">
+                            <col span="1" style="width: 35%;">
+                        </colgroup>
+                        <tr>
+                            <th>What to test ?</th>
+                            <th>Why is it important ?</th>
+                            <th>How will it be tested?</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Admin can add a meeting rooms to the system.</td>
+                            <td>When a control unit is established, he can add that meeting room to the system with devices giving all configuration data.</td>
+                            <td>Checking whether configuration data is properly reached to the database and relevant hardware nodes.</td>
+                        </tr>
+                        <tr>
+                            <td>Admin and users can add meeting schedules to the system</td>
+                            <td>The devices within a meeting room work according to the given schedules.</td>
+                            <td>Checking whether the projectors or ACs working properly according to schedules.</td>
+                        </tr>
+                        <tr>
+                            <td>Devices work properly with the configured data given by system admins</td>
+                            <td>The devices within a meeting room work according to the given config data.</td>
+                            <td>Checking whether the projectors or ACs can work properly.</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <!-- Hardware Designs -->
+            <section class="projects-section bg-light">
+                <h1 class="text-black mb-4 text-center">Hardware Designs</h1>
+                
+                <div class="container">
+                    <!-- Featured Project Row-->
+                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                        
+                        <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/cu_5.jpg" alt="" /></div>
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-100 mb-0"><h3>Main control unit consists of two major parts.</h3>
+                                    <li><h4>Base Part</h4>
+                                        <li>It mainly consists of Raspberry Pi</li>
+                                        <li>Other components are LCD display, relay module, sockets to connect bulbs</li>
+                                    </li>
+                                    <li><h4>Upper Cover Part</h4>
+                                        <li>It has few sockets to connect IR transmittors</li>
+                                        <li>So that IR transmittors can be directed exactly towards the projector or AC</li>
+                                    </li>
+                                   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Featured Project Row-->
+                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                        
+                        <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/eu_1.jpg" alt="" /></div>
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-100 mb-0"><h3>Extending Unit (Optional)</h3>
+                                    <li><h4>Base Part</h4>
+                                        <li>It mainly consists of NodeMCU unit</li>
+                                        <li>It forwards the signals comming from main control unit to projectors or ACs</li>
+                                        <li>So that, we can give control signals for the devices, that can not be reached be main control unit</li>
+                                    </li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circuit Designs -->
+                <h2 class="text-center mt-5">Circuit Designs</h2>
+                <hr class="divider my-4" />
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="UIimage-box" href="assets/img/circuit1.jpg">
+                            <img class="img-fluid" src="assets/img/circuit1.jpg" alt="" />
+                            
+                            <div class="UIimage-box-caption">
+                                
+                                <div class="project-name"></div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="UIimage-box" href="assets/img/sub_units_circuit.jpg">
+                            <img class="img-fluid" src="assets/img/sub_units_circuit.jpg" alt="" />
+                                    
+                            <div class="UIimage-box-caption">
+                                
+                                <div class="project-name"></div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="UIimage-box" href="assets/img/pcb7.jpg">
+                            <img class="img-fluid" src="assets/img/pcb7.jpg" alt="" />
+                                
+                            <div class="UIimage-box-caption">
+                                
+                                <div class="project-name"></div>
+                            </div>
+                        
+                        </a>
+                    </div>
+                
+                    
+                </div>
+            </section>
+
+            <!-- Cloud Deployment -->
+            <div class="container">
+                <h1 class="text-black mb-4 text-center">Cloud Deployment</h1>
+                <div class="img-container">
+                    
+                    <div class="col-xl-15 col-lg-11"><img class="img-fluid ml-5 mr-5 mb-lg-0" src="assets/img/Cloud_Deployment.jpg" alt="" /></div>
+                    
+                </div>
+            </div>
+
+        </section>    
+        
+
+        <!-- Budget Report -->
+        <section id="budget">
+            <div class="container">
+                <h1 class="text-black mb-4 text-center">Budget Report</h1>
+                <div class="img-container">
+                    
+                    <div class="col-xl-7 col-lg-7"><img class="img-fluid ml-15 mr-5 mb-lg-0" src="assets/img/budget_report.jpg" alt="" /></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section class="signup-section" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Find more details from our github project repository</h2>
+                        <button class="btn btn-primary mx-auto" onclick="location.href='https://github.com/cepdnaclk/e16-3yp-smart-meeting-automaton';" target="_blank">Visit Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <!--<i class="fas fa-map-marked-alt text-primary mb-2"></i>-->
+                                <h3 class="text-uppercase m-0">Team Members</h3>
+                                <h4 class="text-uppercase m-0">Visit Our github Accounts</h4>
+                                <hr class="my-4" />
+                                <div class="medium text-black-100"><a href="https://github.com/chamathamarasinghe96" target="_blank" rel="noopener noreferrer">Chamath Amarasinghe</a></div>
+                                <div class="medium text-black-100"><a href="https://github.com/Diwanga" target="_blank" rel="noopener noreferrer">Diwanga Amasith</a></div>
+                                <div class="medium text-black-100"><a href="https://github.com/wishvamadushanka" target="_blank" rel="noopener noreferrer">Wishwa Madusanka</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="medium text-black-100"><a href="#!">e16022@eng.pdn.ac.lk</a></div>
+                                <div class="medium text-black-100"><a href="#!">e16025@eng.pdn.ac.lk</a></div>
+                                <div class="medium text-black-100"><a href="#!">e16222@eng.pdn.ac.lk</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Advisors</h4>
+                                <hr class="my-4" />
+                                <div class="medium text-black-100"><a href="#!">Dr. Isuru Nawinne</a></div>
+                                <div class="medium text-black-100"><a href="#!">Mr. Ziyan Marikkar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+        <footer class="footer bg-black small text-center ext-white-50">
+            <h4 class="text-white mb-4">Essential Links</h4>
+            <h5 class="m-0"><a href="http://www.ce.pdn.ac.lk/" target="_blank" rel="noopener noreferrer">Department of Computer Engineering</a></h5>
+            <h5 class="m-0"><a href="http://eng.pdn.ac.lk/" target="_blank" rel="noopener noreferrer">Faculty of Engineering</a></h5>
+            <h5 class="m-0"><a href="https://www.pdn.ac.lk/" target="_blank" rel="noopener noreferrer">University of Peradeniya</a></h5>
+        </footer>
+
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Smart Meeting Automaton 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
