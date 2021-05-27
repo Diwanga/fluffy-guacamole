@@ -70,7 +70,7 @@ const AdminAddMeeting = () => {
             const todate = meeting.startTime;
             var invdate = new Date(
               todate.toLocaleString("en-US", {
-                timeZone: "America/Toronto",
+                timeZone: "Asia/Colombo",
               })
             );
             console.log("invdate");
@@ -92,7 +92,7 @@ const AdminAddMeeting = () => {
             const toend = meeting.endTime;
             var invdate = new Date(
               toend.toLocaleString("en-US", {
-                timeZone: "America/Toronto",
+                timeZone: "Asia/Colombo",
               })
             );
             console.log("invdate");
@@ -135,13 +135,13 @@ const AdminAddMeeting = () => {
   const reservemeeting = () => {
     // const roomId = params._id;
    // const startTimet = '12:30:00';
-const durationInMinutes = '330';
+// const durationInMinutes = '330';
 console.log("diwanga ",startTime,endTime)
-const endTimet = moment(endTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
-const startTimet = moment(startTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
+// const endTimet = moment(endTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
+// const startTimet = moment(startTime, 'HH:mm').subtract(durationInMinutes, 'minutes').format('HH:mm:ss');
 
-    console.log(`end time T T ${endTimet}`)
-    console.log(`start time T T ${startTimet}`)
+    // console.log(`end time T T ${endTimet}`)
+    // console.log(`start time T T ${startTimet}`)
     console.log(`params id ${params._id}`);
     console.log(`xzczxczxczxczxcxz`);
 
@@ -151,8 +151,8 @@ const startTimet = moment(startTime, 'HH:mm').subtract(durationInMinutes, 'minut
       .post(`${url}/main/add/schedule/`, {
         userId,
         date: searchDate,
-        startTimet,
-        endTimet,
+        startTime,
+        endTime,
         subject,
         roomName: params.roomName,
       }) //date yawanna
