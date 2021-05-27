@@ -75,7 +75,7 @@ const AdminAddMeeting = () => {
             );
 
               var MS_PER_MINUTE = 60000;
-            var invdate = new Date(invdate3 - 360 * MS_PER_MINUTE);
+            var invdate = new Date(invdate3 - 330 * MS_PER_MINUTE);
 
 
 
