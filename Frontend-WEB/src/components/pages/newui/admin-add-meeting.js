@@ -1,20 +1,14 @@
-// import "date-fns";
-// import React from "react";
-// import Grid from "@material-ui/core/Grid";
-// import DateFnsUtils from "@date-io/date-fns";
-// import {
-//   MuiPickersUtilsProvider,
-//   KeyboardTimePicker,
-//   KeyboardDatePicker,
-// } from "@material-ui/pickers";
-// //
+
+
+import moment from "moment";
 
 import React, { useState, useContext } from "react";
 import { lecRoomData } from "../data";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import AlertContext from "../../../context/alert/alertContext";
-const url = "https://apisma.herokuapp.com"
+
+const url = "https://apisma.herokuapp.com";
 //import AuthContext from "../../../context/auth/authContext";
 
 const AdminAddMeeting = () => {
@@ -140,15 +134,25 @@ const AdminAddMeeting = () => {
 
   const reservemeeting = () => {
     // const roomId = params._id;
+   // const startTimet = '12:30:00';
+const durationInMinutes = '330';
+
+const endTimet = moment(endTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
+const startTimet = moment(startTime, 'HH:mm:ss').subtract(durationInMinutes, 'minutes').format('HH:mm');
+
+    console.log(`end time T T ${endTimet}`)
+    console.log(`start time T T ${startTimet}`)
     console.log(`params id ${params._id}`);
     console.log(`xzczxczxczxczxcxz`);
+
     //  console.log(`GETMEETINGS ${searchDate}`);
+
     axios
       .post(`${url}/main/add/schedule/`, {
         userId,
         date: searchDate,
-        startTime,
-        endTime,
+        startTimet,
+        endTimet,
         subject,
         roomName: params.roomName,
       }) //date yawanna
@@ -181,6 +185,12 @@ const AdminAddMeeting = () => {
     startTime: "",
     endTime: "",
   });
+
+
+
+
+
+
   const { userId, subject, startTime, endTime } = onemeeting;
   // const lecRoomName = "Lecture Room 1";
   // const [lecRooms, setLecRooms] = useState(lecRoomData);
