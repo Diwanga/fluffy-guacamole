@@ -38,7 +38,7 @@ function AppRoutes() {
         </Route>
         <Route exact path="/register" exact component={Register} />
         {/* <Route exact path="/newlogin" exact component={LoginNew} /> */}
-        <Route exact path="/about" exact component={About} />
+        <Route exact path="/about" exact component={Home} />
 
         {/* //============================== */}
 
