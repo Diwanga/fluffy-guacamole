@@ -1,4 +1,4 @@
-import React , {useContext} from 'react';
+import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -21,20 +21,20 @@ import AuthContext from "../../../context/auth/authContext";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    
+
     width: '100%',
     maxWidth: 560,
     backgroundColor: theme.palette.background.paper,
     padding: '5% 8%',
-     marginTop: theme.spacing(2),
+    marginTop: theme.spacing(2),
 
   },
   card: {
-    
+
     width: '60%',
-    
-    marginTop:"15%",
-    margin : "  0 20%",
+
+    marginTop: "15%",
+    margin: "  0 20%",
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -47,77 +47,72 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const card = {heading :"Shedule Your Meeting on the go",
-  meadia:"You can use our WEB Protral and Our Mobile App",
-image:`${uimage}`};
-  
- 
-export const Profile=()=> {
+const card = {
+  heading: "Shedule Your Meeting on the go",
+  meadia: "You can use our WEB Protral and Our Mobile App",
+  image: `${uimage}`
+};
+
+
+export const Profile = () => {
   const authContext = useContext(AuthContext);
-  const {  user, isadmin } = authContext;
+  const { user, isadmin } = authContext;
   const classes = useStyles();
 
   return (
     <Container maxWidth="sm">
 
- <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={card.image}
-                    title="Image title"
-                  />
-                 
-                 
-                </Card>
+      <Card className={classes.card}>
+        <CardMedia
+          className={classes.cardMedia}
+          image={card.image}
+          title="Image title"
+        />
 
 
-    <List className={classes.root}>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="USERID : " secondary={user.userId} />
-      </ListItem>
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="NAME : " secondary={user.name} />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <WorkIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="EMAIL" secondary={user.email} />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="PHONE" secondary={user.phone} />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="DATE OF BIRTH" secondary="01 Aug 1999" />
-      </ListItem>
-    </List>
-  </Container>
-  
+      </Card>
+
+
+      <List className={classes.root}>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="USERID : " secondary={user.userId} />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="NAME : " secondary={user.name} />
+        </ListItem>
+        <Divider variant="inset" component="li" />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <WorkIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="EMAIL" secondary={user.email} />
+        </ListItem>
+        <Divider variant="inset" component="li" />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <BeachAccessIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="PHONE" secondary={user.phone} />
+        </ListItem>
+        <Divider variant="inset" component="li" />
+
+      </List>
+    </Container>
+
   );
 }
 
