@@ -68,14 +68,14 @@ const AdminAddMeeting = () => {
             // const dd = new Date(meeting.startTime);
             // console.log(dd.getTime().toLocaleString());
             const todate = meeting.startTime;
-            var invdate3 = new Date(
+            var invdate = new Date(
               todate.toLocaleString("en-US", {
                 timeZone: "Asia/Colombo",
               })
             );
 
-              var MS_PER_MINUTE = 60000;
-            var invdate = new Date(invdate3 - 330 * MS_PER_MINUTE);
+            //   var MS_PER_MINUTE = 60000;
+            // var invdate = new Date(invdate3 - 330 * MS_PER_MINUTE);
 
 
 
@@ -96,13 +96,13 @@ const AdminAddMeeting = () => {
           }
           if (meeting.endTime) {
             const toend = meeting.endTime;
-            var invdate1 = new Date(
+            var invdate = new Date(
               toend.toLocaleString("en-US", {
                 timeZone: "Asia/Colombo",
               })
             );
-            var MS_PER_MINUTE = 60000;
-            var invdate = new Date(invdate1 - 360 * MS_PER_MINUTE);
+            // var MS_PER_MINUTE = 60000;
+            // var invdate = new Date(invdate1 - 360 * MS_PER_MINUTE);
 
             console.log("invdate");
             console.log(invdate.toISOString().slice(0, 10));
