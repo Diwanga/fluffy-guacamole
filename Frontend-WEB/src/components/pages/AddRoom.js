@@ -91,7 +91,7 @@ function AddRoom() {
           <label htmlFor="category">Password</label>
           <input
             type="text"
-            name="controlUnitId"
+            name="password"
             value={roomInsert.password}
             onChange={handleChange}
             required
