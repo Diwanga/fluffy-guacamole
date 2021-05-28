@@ -8,7 +8,7 @@ function AddRoom() {
     category: "",
     roomName: "",
     controlUnitId: "",
-    password : "",
+    password: "",
     acId: [],
     projectorId: [],
   });
