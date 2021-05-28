@@ -8,6 +8,7 @@ function AddRoom() {
     category: "",
     roomName: "",
     controlUnitId: "",
+    password : "",
     acId: [],
     projectorId: [],
   });
@@ -82,6 +83,16 @@ function AddRoom() {
             type="text"
             name="controlUnitId"
             value={roomInsert.controlUnitId}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="category">Password</label>
+          <input
+            type="text"
+            name="controlUnitId"
+            value={roomInsert.password}
             onChange={handleChange}
             required
           />
