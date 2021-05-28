@@ -119,7 +119,7 @@ export const Register = (props) => {
             minLength="5"
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="password2">address1</label>
           <input
             type="text"
@@ -148,7 +148,7 @@ export const Register = (props) => {
             onChange={onChange}
             minLength="5"
           />
-        </div>
+        </div> */}
         <div className="form-group">
           <label htmlFor="password2">onetimeId</label>
           <input
